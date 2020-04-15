@@ -1,0 +1,17 @@
+{
+  "data": {
+    "tipos": [
+      { "cod_tipo": 1, "desc_tipo": "CAMPO DE RESPOSTA" },
+      { "cod_tipo": 2, "desc_tipo": "MULTIPLAS ESCOLHAS" },
+      { "cod_tipo": 3, "desc_tipo": "ALTERNATIVA" },
+      { "cod_tipo": 4, "desc_tipo": "FOTO" },
+      { "cod_tipo": 5, "desc_tipo": "DOCUMENTO" },
+      { "cod_tipo": 6, "desc_tipo": "CAMPO DE RESPOSTA + FOTO" },
+      { "cod_tipo": 7, "desc_tipo": "CAMPO DE RESPOSTA + DOCUMENTO" }
+    ],
+    "perguntas": [
+      { "cod_pergunta": null, "desc_pergunta": null, "cod_tipo": null },
+      { "cod_pergunta": null, "desc_pergunta": null, "cod_tipo": null }
+    ]
+  }
+}

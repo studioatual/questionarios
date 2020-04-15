@@ -1,0 +1,110 @@
+.checklist {
+  margin: 8px 0;
+
+  &-title {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    background: #eee;
+  }
+
+  &-item {
+    position: relative;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+
+    &::after {
+      display: table;
+      content: '';
+      clear: both;
+    }
+  }
+
+  &-options {
+    float: left;
+    width: 50px;
+    height: 100%;
+    background: orange;
+  }
+
+  &-container {
+    float: left;
+    width: calc(100% - 50px);
+    height: 100%;
+    background: gray;
+  }
+
+  &-btn {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+
+    &.center {
+      text-align: center;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 14px;
+  line-height: normal;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  &-success {
+    color: #0ca600 !important;
+    border: 1px solid rgba(12, 166, 0, 0.3) !important;
+
+    &:hover {
+      color: #fff !important;
+      background: #0ca600;
+      border: 1px solid rgba(12, 166, 0, 1) !important;
+    }
+  }
+
+  &-lg {
+    font-size: 20px !important;
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  & > .fa {
+    font-size: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 24px;
+  }
+}
+
+.form {
+  &-group {
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+
+    label {
+      display: block;
+      line-height: 2rem;
+      font-size: 1.1rem;
+      padding: 0.4rem 0 0 0.8rem;
+    }
+  }
+
+  &-control {
+    padding: 0 0 0.4rem 0.8rem;
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}

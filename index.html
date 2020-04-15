@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      #perguntas {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="perguntas">
+      <div class="checklist">
+        <div class="checklist-title">Perguntas</div>
+        <div
+          v-for="(pergunta,index) in perguntas"
+          v-bind:key="index"
+          class="checklist-item"
+        >
+          <div class="checklist-options">
+            a
+          </div>
+          <div class="checklist-container">
+            <div class="checklist-row">
+              <div class="checklist-col-8">
+                <div class="form-group">
+                  <label>Pergunta</label>
+                  <input
+                    type="text"
+                    v-model="pergunta.desc_pergunta"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="checklist-col-4">
+                <div class="form-group">
+                  <label>Tipo</label>
+                  <vue-select v-model="pergunta.cod_tipo" :options="options" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checklist-btn center">
+          <button
+            type="button"
+            @click="addItem"
+            class="btn btn-success btn-lg btn-block"
+          >
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
